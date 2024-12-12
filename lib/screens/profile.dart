@@ -93,7 +93,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   zoomWidget: CachedNetworkImage(
                     width: mq * .4,
                     height: mq * .4,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.contain,
                     imageUrl: APIs.me.image,
                     errorWidget: (context, url, error) => const CircleAvatar(
                       child: Icon(
